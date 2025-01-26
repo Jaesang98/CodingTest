@@ -94,6 +94,6 @@
      - |: OR 연산
    ```
    a, b = True, False
-   a & b  # False
-   a | b  # True
+   a & b, a and b  # False
+   a | b, a or b  # True
    ```
