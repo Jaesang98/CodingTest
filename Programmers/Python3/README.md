@@ -5,7 +5,6 @@
 ## 📅 작성일
 2025년 2월 01일
 
----
 
 ## 📌 목차
 1. **소개**
@@ -14,12 +13,10 @@
 4. **2025-02-01**
 7. **참고 자료**
 
----
 
 ## 📝 소개
 코딩테스트 기록을 하는 곳 입니다!
 
----
 
 ## Python 기본 함수 및 연산 정리
 
@@ -136,9 +133,3 @@ a | b, a or b  # True
 a = 100
 print(f"{a} is even")  # "100 is even"
 ```
-
----
-
-## 📚 참고 자료
-- [프로그래머스](https://school.programmers.co.kr/learn/challenges?order=acceptance_asc&languages=python3&page=1&levels=0)
-- [내 깃허브](https://github.com/Jaesang98/CodingTest)
