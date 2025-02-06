@@ -238,3 +238,26 @@ def solution(str_list, ex):
         if ex not in i :
             answer += i
     return answer
+
+
+# 조건에 맞게 수열 변환하기 3
+# 정수 배열 arr와 자연수 k가 주어집니다. 만약 k가 홀수라면 arr의 모든 원소에 k를 곱하고, k가 짝수라면 arr의 모든 원소에 k를 더합니다. 이러한 변환을 마친 후의 arr를 return 하는 solution 함수를 완성해 주세요.
+# https://school.programmers.co.kr/learn/courses/30/lessons/181835
+def solution(arr, k):
+    answer = []
+    for i in arr :
+        if k % 2 == 0:
+            answer.append(i+k)
+        else :
+            answer.append(i*k)
+    return answer
+
+
+# x 사이의 개수
+# 문자열 myString이 주어집니다. myString을 문자 "x"를 기준으로 나눴을 때 나눠진 문자열 각각의 길이를 순서대로 저장한 배열을 return 하는 solution 함수를 완성해 주세요.
+# https://school.programmers.co.kr/learn/courses/30/lessons/181867
+def solution(myString):
+    answer = []
+    for i in myString.split('x') :
+        answer.append(len(i))
+    return answer
