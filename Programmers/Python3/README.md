@@ -1,6 +1,6 @@
-# Python 기본 함수 및 연산 정리
+# Python 기본함수정리
 
-> 파이썬 기본 함수와 문법들을 정리하는 곳 입니다.
+> 파이썬 기본 함수들을 정리하는 곳 입니다.
 
 ## 📅 작성일
 
@@ -10,247 +10,43 @@
 
 1. **소개**
 2. **함수**
-3. **문법**
-4. **참고 자료**
 
 ## 📝 소개
 
-파이썬 기본 함수와 문법들의 설명과 예시를 작성합니다
+파이썬 함수들 모음
 
-## Python 기본 함수 및 문법 정리
+## Python 기본 함수 정리
 
-### 📌 함수
+### 📌 [reverse()](https://velog.io/@jaesang98/Python-reverse) 순서뒤집기
 
-#### reverse()
+### 📌 [sort()](https://velog.io/@jaesang98/Python-sort) 정렬하기
 
-- **설명**: 리스트의 순서를 뒤집는다.
-- **제한**: 문자열 ❌ 딕셔너리 ❌ 리스트 ✅
+### 📌 [pop()](https://velog.io/@jaesang98/Python-pop) 제거하기
 
-```python
-nums = [1, 2, 3]
-nums.reverse()  # [3, 2, 1]
-```
+### 📌 [append()](https://velog.io/@jaesang98/Python-append) 추가하기
 
-#### pop()
+### 📌 [replace()](https://velog.io/@jaesang98/Python-replace) 교체하기
 
-- **설명**:
-  - 리스트: 마지막 요소를 제거하고 반환
-  - 딕셔너리: 특정 키를 제거하고 값을 반환
-- **제한**: 문자열 ❌ 딕셔너리 ✅ 리스트 ✅
+### 📌 [len()](https://velog.io/@jaesang98/Python-len) 길이구하기
 
-```python
-# 리스트
-nums = [10, 20, 30]
-nums.pop()  # 30
+### 📌 [swapcase()](https://velog.io/@jaesang98/Python-swapcase) 대소문자 반전
 
-# 딕셔너리
-data = {"a": 1, "b": 2}
-data.pop("b")  # 2
-```
+### 📌 [index()](https://velog.io/@jaesang98/Python-index) 인덱스 구하기
 
-#### sort()
+### 📌 [sum()](https://velog.io/@jaesang98/Python-sum) 합 구하기
 
-- **설명**: 기존의 리스트를 정렬
-- **제한**: 문자열 ❌ 딕셔너리 ❌ 리스트 ✅
+### 📌 [map()](https://velog.io/@jaesang98/Python-map) 리스트 요소변환
 
-```python
-nums = [3, 1, 2]
-nums.sort()  # [1, 2, 3]
-```
+### 📌 [max()](https://velog.io/@jaesang98/Python-max) 최대값
 
-#### sorted()
+### 📌 [min()](https://velog.io/@jaesang98/Python-min) 최소값
 
-- **설명**: 새로운 정렬된 리스트를 만든다
-- **제한**: 문자열 ✅ 딕셔너리 ✅ 리스트 ✅
+### 📌 [list()](https://velog.io/@jaesang98/Python-list) 리스트로변환
 
-```python
-# 리스트 정렬
-nums = [3, 1, 2]
-sorted_nums = sorted(nums)  # [1, 2, 3]
+### 📌 [eval()](https://velog.io/@jaesang98/Python-eval) 문자열을 계산
 
-# 문자열 정렬
-sorted_str = sorted("dcba")  # ['a', 'b', 'c', 'd']
+### 📌 [abs()](https://velog.io/@jaesang98/Python-abs) 절대값
 
-# 딕셔너리 키 정렬
-data = {"b": 2, "a": 1, "c": 3}
-sorted_keys = sorted(data)  # ['a', 'b', 'c']
-```
+### 📌 [join()](https://velog.io/@jaesang98/Python-join) 문자열 연결
 
-#### append()
-
-- **설명**: 리스트에 요소를 추가
-- **제한**: 문자열 ❌ 딕셔너리 ❌ 리스트 ✅
-
-```python
-nums = [1]
-nums.append(2)  # [1, 2]
-```
-
-#### replace()
-
-- **설명**: 문자열의 특정 값을 다른 값으로 교체
-- **제한**: 문자열 ✅ 딕셔너리 ❌ 리스트 ❌
-
-```python
-text = "hello world"
-text.replace("world", "Python")  # "hello Python"
-```
-
-#### len()
-
-- **설명**: 문자열, 리스트, 딕셔너리의 길이를 반환
-- **제한**: 문자열 ✅ 딕셔너리 ✅ 리스트 ✅
-
-```python
-len("hello")  # 5
-len([1, 2, 3])  # 3
-len({"a": 1, "b": 2})  # 2
-```
-
-#### swapcase()
-
-- **설명**: 문자열 대문자를 소문자로, 소문자를 대문자로
-- **제한**: 문자열 ✅ 딕셔너리 ❌ 리스트 ❌
-
-```python
-my_string = 'aaaAAA'
-my_string.swapcase() # AAAaaa
-```
-
-#### index()
-
-- **설명**: 리스트 및 문자열의 특정 요소의 인덱스를 찾는데 사용
-- **제한**: 문자열 ✅ 딕셔너리 ❌ 리스트 ✅
-
-```python
-# List
-my_list = [10, 20, 30, 40]
-print(my_list.index(30))  # 결과: 2
-
-# String
-my_string = 'abcde'
-print(my_string.index('a'))  # 결과: 0
-```
-
-#### sum()
-
-- **설명**: 리스트 및 딕셔너리의 안의 요소들의 합을 구한다
-- **제한**: 문자열 ❌ 딕셔너리 ✅ 리스트 ✅
-
-```python
-# List
-numbers = [1, 2, 3, 4, 5]
-print(sum(numbers))  # 결과: 15
-
-# String
-my_dict = {"a": 1, "b": 2, "c": 3}
-print(sum(my_dict.values()))  # 결과: 6
-
-## 그 외 튜플 집합도 가능
-```
-
-#### map()
-
-- **설명**: 리스트 데이터 변환이 필요할 때 사용한다
-- **제한**: 문자열 ❌ 딕셔너리 ❌ 리스트 ✅
-
-```python
-# map(변환함수, 반복가능한(iterable) 데이터)
-numbers = ["1", "2", "3"]
-result = map(int, numbers)
-print(list(result))  # 결과: [1, 2, 3]
-```
-
-#### max()
-
-- **설명**: 최대값을 가져올 때 사용한다
-- **제한**: 문자열 ✅ 딕셔너리 ✅ 리스트 ✅
-
-```python
-# 문자열
-max(1,2)
-
-# 딕셔너리
-dict = {"a": 10, "b": 20, "c": 15}
-
-max(dict)  # 결과: 'c' (키 중에서 최대값)
-max(dict.values())  # 결과: 20 (값 중에서 최대값)
-
-# 리스트
-list = [1,2,3,4,5]
-max(list) # 결과 : 5
-
-```
-
-#### list()
-
-- **설명**: 반복 가능한 객체를 리스트로 변환할 때 사용한다.
-- **제한**: 문자열 ✅ 딕셔너리 ✅ 리스트 ✅
-
-```python
-print(list(range(0, 5)))       # 결과: [0, 1, 2, 3, 4]
-print(list("hello"))           # 결과: ['h', 'e', 'l', 'l', 'o']
-print(list({"a": 1, "b": 2}))  # 결과: ['a', 'b']
-print(list([1, 2, 3]))         # 결과: [1, 2, 3] (이미 리스트인 경우 그대로 반환)
-
-```
-
-#### eval()
-
-- **설명**: 문자열로 되있는 계산식을 실행할 때 사용
-- **제한**: 문자열 ✅ 딕셔너리 ❌ 리스트 ❌
-
-```python
-print(eval('1+2'))       # 결과: 3
-
-```
-
-### 📌 문법
-
-#### n \*\* 0.5 (제곱근 구하기)
-
-- **설명**: 숫자의 제곱근 계산
-
-```python
-144 ** 0.5  # 12.0
-```
-
-#### n // n (정수 나눗셈)
-
-- **설명**: 정수 나눗셈(몫) 계산
-
-```python
-15 // 4  # 3
-```
-
-#### & 와 |
-
-- **설명**:
-  - `&` (AND 연산)
-  - `|` (OR 연산)
-
-```python
-a, b = True, False
-a & b, a and b  # False
-a | b, a or b  # True
-```
-
-#### 문자열 포매팅 (f-string)
-
-- **설명**: 문자열 내에서 변수 값을 쉽게 삽입
-
-```python
-a = 100
-print(f"{a} is even")  # "100 is even"
-```
-
-#### 반복문 (슬라이싱)
-
-- **설명**: 문자열 내에서 변수 값을 쉽게 삽입
-
-```python
-arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-print(arr[::5]) # 출력: [0, 5, 10]
-print(arr[::-1] ) # 출력: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
-```
+### 📌 [insert()](https://velog.io/@jaesang98/Python-insert) 리스트 요소삽입

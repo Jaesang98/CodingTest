@@ -1,11 +1,2 @@
-def solution(n):
-    if n > 6 :
-        return (n % 6) + 1
-    elif n < 6 :
-        if 6 % n == 0 :
-            return 6 / n
-        else :
-            return 6 % n
-    return 1
-
-print(solution(3))
+data = [1, 2, 3, 4, 5]
+print(data.rotate(2))  # 결과: [4, 5, 1, 2, 3]

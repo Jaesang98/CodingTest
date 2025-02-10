@@ -122,3 +122,17 @@ Programmers 를 Python이라는 언어를 통해 진행 중 새롭게 알게 되
   계산식이 문자열로 되어있었고 문자열 포매팅으로 간단하게 해결할 수 있을 줄 알았는데 안됬음;
 - **해결**  
   eval() 함수 를 사용
+
+### 17. [특별한 이차원 배열 1](https://school.programmers.co.kr/learn/courses/30/lessons/181833)
+
+- **문제점**  
+  나는 항상 배열에 값을 넣을 때 `append`를 무조건 썻는데. 이차원 배열에 값을 넣을 때 도 `append`를 쓰니 코드가 길어지는것을 느꼈다
+- **해결**  
+  `append`가 아닌 `[i][j] = 1` 이런식으로 하는것도 좋아보인다
+
+### 18. [외계행성의 나이](https://school.programmers.co.kr/learn/courses/30/lessons/120834)
+
+- **문제점**  
+  a부터 z까지 어떻게 구할지 난감했음
+- **해결**  
+  `list(map(chr, range(97, 123)))` 이렇게 구하면 된다...
