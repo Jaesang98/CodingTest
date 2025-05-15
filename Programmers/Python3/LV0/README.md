@@ -12,8 +12,6 @@ def solution(num1, num2):
     return 1 if num1 == num2 else -1
 ```
 
-<br>
-
 #### 몫 구하기
 
 ```python
