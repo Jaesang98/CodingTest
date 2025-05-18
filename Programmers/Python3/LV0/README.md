@@ -118,3 +118,12 @@ import math
 math.ceil(3.4) # 4
 math.floor(3.4) # 3
 ```
+
+### 인덱스와 값
+
+```python
+리스트 = [10, 20, 30]
+
+for i, v in enumerate(리스트):
+    print(i, v) #0 10 / 1 20 / 2 30
+```
