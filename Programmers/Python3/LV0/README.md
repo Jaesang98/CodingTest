@@ -127,3 +127,23 @@ math.floor(3.4) # 3
 for i, v in enumerate(리스트):
     print(i, v) #0 10 / 1 20 / 2 30
 ```
+
+### 숫자문자 구별
+
+```python
+"1".isdigit() # true
+"1".isalpha() # false
+```
+
+### 대문자 소문자
+
+```python
+'a'.isupper()   # False
+'b'.islower()   # True
+
+"abc".upper()   # "ABC"
+"ABC".lower()   # "abc"
+
+"AbC".swapcase()  # "aBc"
+"aBCdE".swapcase()  # "AbcDe"
+```
