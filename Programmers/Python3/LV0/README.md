@@ -154,3 +154,13 @@ for i, v in enumerate(리스트):
 "AbC".swapcase()  # "aBc"
 "aBCdE".swapcase()  # "AbcDe"
 ```
+
+### value와 index꺼내기
+
+```python
+arr = ["apple", "banana", "cherry"]
+
+for i, fruit in enumerate(arr):
+    print(i, fruit)
+
+```
