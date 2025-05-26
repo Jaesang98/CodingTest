@@ -164,3 +164,13 @@ for i, fruit in enumerate(arr):
     print(i, fruit)
 
 ```
+
+### 오른쪽 왼쪽 데이터
+
+```python
+arr = "0001100"
+print(arr.lstrip("0")) # 1100
+
+arr = "0001100"
+print(arr.rstrip("0")) # 0011
+```
