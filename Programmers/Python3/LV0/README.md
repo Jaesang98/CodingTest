@@ -55,6 +55,21 @@ print((변수 ** 0.5) ** 2) # 64
 my_string[num1], my_string[num2] = my_string[num2], my_string[num1]
 ```
 
+### 배열 독립적인 객체 참조 세팅
+
+```python
+# 이렇게 하면 독립적인 객체
+answer = [[0] * n for _ in range(n)]
+
+# 이렇게 하면 같은 객체를 공유유
+answer = [[0] * n] * n
+```
+
+```python
+# 이렇게 하면 동시에 된다
+my_string[num1], my_string[num2] = my_string[num2], my_string[num1]
+```
+
 ## 📝 함수
 
 #### 특정 문자열 바꾸기
