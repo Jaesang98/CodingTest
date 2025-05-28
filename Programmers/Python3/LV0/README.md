@@ -120,14 +120,12 @@ input = sys.stdin.readline
 n= map(int, input().split())
 ```
 
-### 입력값 받기
+### 문자열 잘라서 배열로
 
 ```python
 # 이건 깔아놓고 시작
-import sys
-input = sys.stdin.readline
-
-n= map(int, input().split())
+a = "i    love  you"
+print(a.split()) # ["i", "love", "you"]
 ```
 
 ### 반올림 내림
@@ -188,4 +186,11 @@ print(arr.lstrip("0")) # 1100
 
 arr = "0001100"
 print(arr.rstrip("0")) # 0011
+```
+
+### 절대값
+
+```python
+a = -2
+print(abs(a)) # 2
 ```
