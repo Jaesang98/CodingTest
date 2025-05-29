@@ -194,3 +194,12 @@ print(arr.rstrip("0")) # 0011
 a = -2
 print(abs(a)) # 2
 ```
+
+### deque - rotate
+
+```python
+from collections import deque
+numbers = deque(numbers)
+numbers.rotate(1) # 오른쪽으로 한바퀴회전
+numbers.rotate(-1) # 왼쪽으로 한바퀴회전
+```
