@@ -47,3 +47,7 @@ def solution(nums):
         return len(nums) // 2
     else :
         return len(answer)
+
+## 해시라고 일부러 dict썻는데 이게 더 좋아보임
+def solution(ls):
+    return min(len(ls)/2, len(set(ls)))
