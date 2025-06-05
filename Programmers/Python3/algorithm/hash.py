@@ -28,3 +28,22 @@ def solution(participant, completion):
     for key, value in hash_dict.items():
         if value > 0:
             return key
+
+
+
+# 폰켓몬
+# https://school.programmers.co.kr/learn/courses/30/lessons/1845
+# hash
+def solution(nums):
+    hash_dict = {}
+    answer = []
+    for i in nums :
+        hash_dict[i] = hash_dict.get(i,0) + 1
+        
+    for key in hash_dict :
+        answer.append(key)
+        
+    if len(nums) // 2 < len(answer) :
+        return len(nums) // 2
+    else :
+        return len(answer)
