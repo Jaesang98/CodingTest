@@ -203,3 +203,12 @@ numbers = deque(numbers)
 numbers.rotate(1) # 오른쪽으로 한바퀴회전
 numbers.rotate(-1) # 왼쪽으로 한바퀴회전
 ```
+
+### find()
+
+```python
+s = "ababcab"
+
+s.find("ab")   # 0
+s.rfind("ab")  # 4
+```
