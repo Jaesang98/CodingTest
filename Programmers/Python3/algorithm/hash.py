@@ -51,3 +51,15 @@ def solution(nums):
 ## 해시라고 일부러 dict썻는데 이게 더 좋아보임
 def solution(ls):
     return min(len(ls)/2, len(set(ls)))
+
+
+
+# 전화번호 목록
+# https://school.programmers.co.kr/learn/courses/30/lessons/42577
+# hash
+def solution(phone_book):
+    phone_book.sort()
+    for i in range(1, len(phone_book)):
+        if phone_book[i].startswith(phone_book[i-1]):
+            return False
+    return True

@@ -222,3 +222,11 @@ s = "ababcab"
 s.find("ab")   # 0
 s.rfind("ab")  # 4
 ```
+
+### startswith()
+
+```python
+s = "hello world"
+print(s.startswith("hello"))  # True
+print(s.startswith("world"))  # False
+```
