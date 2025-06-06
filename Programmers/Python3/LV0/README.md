@@ -61,13 +61,23 @@ my_string[num1], my_string[num2] = my_string[num2], my_string[num1]
 # 이렇게 하면 독립적인 객체
 answer = [[0] * n for _ in range(n)]
 
-# 이렇게 하면 같은 객체를 공유유
+# 이렇게 하면 같은 객체를 공유
 answer = [[0] * n] * n
 ```
 
 ```python
 # 이렇게 하면 동시에 된다
 my_string[num1], my_string[num2] = my_string[num2], my_string[num1]
+```
+
+### 딕셔너리
+
+```python
+for i in strArr :
+    answer_dict[len(i)] = answer_dict.get(len(i), 0) + 1
+
+# keys()도 있음
+print(max(answer_dict.values()))
 ```
 
 ## 📝 함수
