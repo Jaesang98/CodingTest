@@ -230,3 +230,13 @@ s = "hello world"
 print(s.startswith("hello"))  # True
 print(s.startswith("world"))  # False
 ```
+
+### 이진수
+
+```python
+binary = "1011"
+num = int(binary, 2)
+
+num = 11
+binary = bin(num)[2:]
+```
