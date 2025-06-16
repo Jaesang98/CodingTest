@@ -240,3 +240,10 @@ num = int(binary, 2)
 num = 11
 binary = bin(num)[2:]
 ```
+
+### eval
+
+```python
+data = "3 + 4"
+print(eval(data)) # 7
+```
