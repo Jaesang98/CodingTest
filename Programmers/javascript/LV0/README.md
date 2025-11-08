@@ -55,6 +55,12 @@ console.log(data.join("")); // bananaGood
 console.log(2 << 3); // 8
 ```
 
+#### repeat
+
+```javascript
+console.log("hi".repeat(3)); // hihihi
+```
+
 ---
 
 ## 코딩 꿀팁
