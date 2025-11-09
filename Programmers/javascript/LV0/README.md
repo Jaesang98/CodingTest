@@ -47,6 +47,7 @@ console.log([...data]); // ["b", "a", "n", "a", "n", "a", "G", "o", "o", "d"]
 ```javascript
 const data = ["b", "a", "n", "a", "n", "a", "G", "o", "o", "d"];
 console.log(data.join("")); // bananaGood
+console.log(data.join("-")); // b-a-n-a-n-a-G-o-o-d
 ```
 
 #### 비트연산을 통해 제곱
@@ -61,6 +62,16 @@ console.log(2 << 3); // 8
 console.log("hi".repeat(3)); // hihihi
 ```
 
+#### slice
+
+```javascript
+const arr = [10, 20, 30, 40, 50];
+console.log(arr.slice(1, 3)); // [20, 30]
+
+const str = "banana";
+console.log(str.slice(1, 4)); // "ana"
+```
+
 ---
 
 ## 코딩 꿀팁
@@ -73,4 +84,21 @@ function solution(numbers) {
   numbers.sort((a, b) => b - a);
   return numbers[0] * numbers[1];
 }
+```
+
+#### 문자를 배열로
+
+```javascript
+// 스프레드
+const data = "bananaGood";
+console.log([...data]); // ["b", "a", "n", "a", "n", "a", "G", "o", "o", "d"]
+```
+
+#### 배열을 문자로
+
+```javascript
+// join
+const data = ["b", "a", "n", "a", "n", "a", "G", "o", "o", "d"];
+console.log(data.join("")); // bananaGood
+console.log(data.join("-")); // b-a-n-a-n-a-G-o-o-d
 ```
